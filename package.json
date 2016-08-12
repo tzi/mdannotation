@@ -1,0 +1,23 @@
+{
+  "name": "annotated-markdown-js",
+  "version": "1.0.0",
+  "description": "annotated-markdown-js ======",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzi/annotated-markdown-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tzi/annotated-markdown-js/issues"
+  },
+  "homepage": "https://github.com/tzi/annotated-markdown-js#readme",
+  "dependencies": {
+    "markdown": "^0.5.0",
+    "posthtml": "^0.9.0"
+  }
+}
