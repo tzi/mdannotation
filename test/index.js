@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 var fs = require('fs');
 var path = require('path');
 var markdown = require( "markdown" ).markdown;
 var posthtml = require('posthtml');
-var annotationVideo = require('./annotation-video');
+var annotationVideo = require('./../plugins/mdannotation-video');
 
 // Read a file (relative path) with node
 function readFile(fileName, cb) {
@@ -17,7 +19,7 @@ function readFile(fileName, cb) {
     });
 }
 
-readFile('test/page.md', function(md) {
+readFile('page.md', function(md) {
     const html = markdown.toHTML(md);
     posthtml()
         .use(annotationVideo)
