@@ -1,7 +1,8 @@
 Markdown Annotation @addClass
 ======
 
-Markdown annotation is a [posthtml](https://github.com/posthtml/posthtml) plugin to add classes to the next paragraph.
+Markdown annotation is a [posthtml](https://github.com/posthtml/posthtml) plugin 
+to add classes to the next paragraph.
 
 
 Quick start

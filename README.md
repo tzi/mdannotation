@@ -8,8 +8,10 @@ Plugins
 
  * [mdannotation-addclass](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-addclass#readme): 
     to add classes to the next paragraph.
+ * [mdannotation-alert](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-alert#readme): 
+		to create alert components.
  * [mdannotation-embed](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-embed#readme): 
-    to embed a video, a code playground, etc.
+    to embed videos, code playgrounds, etc.
 
  
 How to use it

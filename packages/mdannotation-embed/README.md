@@ -1,7 +1,8 @@
 Markdown Annotation @embed
 ======
 
-Markdown annotation is a [posthtml](https://github.com/posthtml/posthtml) plugin to embed a video, a code playground, etc.
+Markdown annotation is a [posthtml](https://github.com/posthtml/posthtml) plugin
+to embed videos, code playgrounds, etc.
 
 Supports: 
  * [YouTube videos](https://www.youtube.com)
