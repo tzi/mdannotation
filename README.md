@@ -6,7 +6,8 @@ A collection of [posthtml](https://github.com/posthtml/posthtml) plugins to enab
 Plugins
 ------
 
- * [mdannotation-video](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-video#readme)
+ * [mdannotation-embed](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-embed#readme): 
+    to embed a video, a code playground, etc.
  
  
 Run tests
