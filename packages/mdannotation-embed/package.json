@@ -1,6 +1,6 @@
 {
   "name": "mdannotation-embed",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Markdown annotation to embed videos, code playgrounds, etc.",
   "main": "mdannotation-embed.js",
   "directories": {
