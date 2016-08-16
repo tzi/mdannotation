@@ -41,9 +41,6 @@ module.exports = mdannotation('embed', function (node, [param]) {
             src: `//codepen.io/mandymichael/embed/preview/${id}/`
         });
     }
-
-    
-    
     
     return node;
 });

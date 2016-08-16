@@ -3,6 +3,12 @@ Markdown Annotation @embed
 
 Markdown annotation is a [posthtml](https://github.com/posthtml/posthtml) plugin to embed a video, a code playground, etc.
 
+Supports: 
+ * [YouTube videos](https://www.youtube.com)
+ * [Dailymotion videos](http://www.dailymotion.com)
+ * [Vimeo videos](http://vimeo.com)
+ * [Codepen playground](http://codepen.io)
+
 
 Quick start
 ------
