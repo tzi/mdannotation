@@ -1,23 +1,25 @@
 {
-  "name": "annotated-markdown-js",
+  "name": "mdannotation",
   "version": "1.0.0",
-  "description": "annotated-markdown-js ======",
-  "main": "index.js",
+  "description": "Custom Markdown annotation",
+  "main": "src/mdannotation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tzi/annotated-markdown-js.git"
+    "url": "git+ssh://git@github.com/tzi/mdannotation.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas ZILLIOX (http://tzi.fr)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tzi/annotated-markdown-js/issues"
+    "url": "https://github.com/tzi/mdannotation/issues"
   },
-  "homepage": "https://github.com/tzi/annotated-markdown-js#readme",
-  "dependencies": {
+  "homepage": "https://github.com/tzi/mdannotation#readme",
+  "devDependencies": {
+    "mocha": "^3.0.2",
     "markdown": "^0.5.0",
-    "posthtml": "^0.9.0"
+    "posthtml": "^0.9.0",
+    "lerna": "2.0.0-beta.26"
   }
 }
