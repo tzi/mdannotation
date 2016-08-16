@@ -6,6 +6,8 @@ A collection of [posthtml](https://github.com/posthtml/posthtml) plugins to enab
 Plugins
 ------
 
+ * [mdannotation-addclass](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-addclass#readme): 
+    to add classes to the next paragraph.
  * [mdannotation-embed](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-embed#readme): 
     to embed a video, a code playground, etc.
 
