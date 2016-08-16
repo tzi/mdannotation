@@ -1,12 +1,13 @@
 module.exports = function(annotation, cb) {
     return function(tree) {
-        return tree.map(function(node) {
+        return tree.match({tag: 'p'}, function(node) {
             if (Array.isArray(node.content) && node.content.length) {
-                const head = node.content[0];
-                if (typeof head == 'string') {
+                if (typeof node.content[0] == 'string') {
+                    const head = node.content[0].split('\n')[0];
                     if (new RegExp(`^@${annotation}`).test(head)) {
-                        const param = head.substr(annotation.length + 2);
-                        node = cb(node, param);
+                        const params = head.substr(annotation.length + 2).split(' ');
+                        node.content[0] = node.content[0].split('\n').slice(0).join('\n');
+                        node = cb(node, params);
                     }
                 }
             }

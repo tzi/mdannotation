@@ -9,9 +9,36 @@ describe('MdAnnotation embed', function() {
             assert.equal(tree.length, 1);
             assert.equal(tree[0].tag, 'div');
             assert.equal(tree[0].attrs.className, 'md-video');
+
             assert.equal(tree[0].content.length, 1);
             assert.equal(tree[0].content[0].tag, 'iframe');
             assert.equal(tree[0].content[0].attrs.src, 'https://www.youtube.com/embed/dQw4w9WgXcQ');
+        });
+    });
+    
+    it('should convert dailymotion video', function() {
+        const md = `@embed http://www.dailymotion.com/video/x5ykzv_rick-roll_music`;
+        return converter(md, function(tree) {
+            assert.equal(tree.length, 1);
+            assert.equal(tree[0].tag, 'div');
+            assert.equal(tree[0].attrs.className, 'md-video');
+            
+            assert.equal(tree[0].content.length, 1);
+            assert.equal(tree[0].content[0].tag, 'iframe');
+            assert.equal(tree[0].content[0].attrs.src, '//www.dailymotion.com/embed/video/x5ykzv');
+        });
+    });
+
+    it('should convert vimeo video', function() {
+        const md = `@embed https://vimeo.com/87031388`;
+        return converter(md, function(tree) {
+            assert.equal(tree.length, 1);
+            assert.equal(tree[0].tag, 'div');
+            assert.equal(tree[0].attrs.className, 'md-video');
+
+            assert.equal(tree[0].content.length, 1);
+            assert.equal(tree[0].content[0].tag, 'iframe');
+            assert.equal(tree[0].content[0].attrs.src, 'https://player.vimeo.com/video/87031388');
         });
     });
 });
