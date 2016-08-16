@@ -9,7 +9,7 @@ const createVideo = (src) => {
             width: 560,
             height: 315,
             frameborder: 0,
-            allowfullscreen: '',
+            allowfullscreen: 'true',
             src
         })
     ]);
@@ -29,6 +29,21 @@ module.exports = mdannotation('embed', function (node, [param]) {
         const id = embedUrl.pathname.split('/')[1];
         return createVideo(`https://player.vimeo.com/video/${id}`);
     }
+
+    if (embedUrl.hostname == 'codepen.io') {
+        const id = embedUrl.pathname.split('/')[3];
+        return createElement('iframe', {
+            height: 265,
+            scrolling: 'no',
+            frameborder: 0,
+            allowfullscreen: 'true',
+            allowtransparency: 'true',
+            src: `//codepen.io/mandymichael/embed/preview/${id}/`
+        });
+    }
+
+    
+    
     
     return node;
 });

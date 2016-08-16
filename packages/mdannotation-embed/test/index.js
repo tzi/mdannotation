@@ -41,4 +41,13 @@ describe('MdAnnotation embed', function() {
             assert.equal(tree[0].content[0].attrs.src, 'https://player.vimeo.com/video/87031388');
         });
     });
+
+    it('should convert codepen playground', function() {
+        const md = `@embed http://codepen.io/mandymichael/pen/dXAoxX`;
+        return converter(md, function(tree) {
+            assert.equal(tree.length, 1);
+            assert.equal(tree[0].tag, 'iframe');
+            assert.equal(tree[0].attrs.src, '//codepen.io/mandymichael/embed/preview/dXAoxX/');
+        });
+    });
 });
