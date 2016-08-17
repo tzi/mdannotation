@@ -4,7 +4,7 @@ const mdannotation = require('../../src/mdannotation');
 const createElement = require('../../src/createElement');
 
 const createVideo = (src) => {
-    return createElement('div', {className: 'md-video'}, [
+    return createElement('div', {class: 'md-video'}, [
         createElement('iframe', {
             width: 560,
             height: 315,

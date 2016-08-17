@@ -8,7 +8,7 @@ describe('MdAnnotation embed', function() {
         return converter(md, function(tree) {
             assert.equal(tree.length, 1);
             assert.equal(tree[0].tag, 'div');
-            assert.equal(tree[0].attrs.className, 'md-video');
+            assert.equal(tree[0].attrs.class, 'md-video');
 
             assert.equal(tree[0].content.length, 1);
             assert.equal(tree[0].content[0].tag, 'iframe');
@@ -21,7 +21,7 @@ describe('MdAnnotation embed', function() {
         return converter(md, function(tree) {
             assert.equal(tree.length, 1);
             assert.equal(tree[0].tag, 'div');
-            assert.equal(tree[0].attrs.className, 'md-video');
+            assert.equal(tree[0].attrs.class, 'md-video');
             
             assert.equal(tree[0].content.length, 1);
             assert.equal(tree[0].content[0].tag, 'iframe');
@@ -34,7 +34,7 @@ describe('MdAnnotation embed', function() {
         return converter(md, function(tree) {
             assert.equal(tree.length, 1);
             assert.equal(tree[0].tag, 'div');
-            assert.equal(tree[0].attrs.className, 'md-video');
+            assert.equal(tree[0].attrs.class, 'md-video');
 
             assert.equal(tree[0].content.length, 1);
             assert.equal(tree[0].content[0].tag, 'iframe');

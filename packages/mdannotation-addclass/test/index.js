@@ -9,7 +9,7 @@ Lorem Ipsum`;
         return converter(md, function(tree) {
             assert.equal(tree.length, 1);
             assert.equal(tree[0].tag, 'p');
-            assert.equal(tree[0].attrs.className, 'subtitle subtitle--long');
+            assert.equal(tree[0].attrs.class, 'subtitle subtitle--long');
             assert.equal(tree[0].content.length, 1);
             assert.equal(tree[0].content[0], 'Lorem Ipsum');
         });

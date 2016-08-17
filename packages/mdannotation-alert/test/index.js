@@ -9,7 +9,7 @@ Lorem Ipsum`;
         return converter(md, function(tree) {
             assert.equal(tree.length, 1);
             assert.equal(tree[0].tag, 'div');
-            assert.equal(tree[0].attrs.className, 'md-alert');
+            assert.equal(tree[0].attrs.class, 'md-alert');
             assert.equal(tree[0].content.length, 1);
             assert.equal(tree[0].content[0], 'Lorem Ipsum');
         });
@@ -19,7 +19,7 @@ Lorem Ipsum`;
         const md = `@alert warning
 Lorem Ipsum`;
         return converter(md, function(tree) {
-            assert.equal(tree[0].attrs.className, 'md-alert md-alert--warning');
+            assert.equal(tree[0].attrs.class, 'md-alert md-alert--warning');
         });
     });
 });
