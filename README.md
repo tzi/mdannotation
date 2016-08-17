@@ -6,6 +6,8 @@ A collection of [posthtml](https://github.com/posthtml/posthtml) plugins to enab
 Plugins
 ------
 
+ * [mdannotation-import](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-embed#readme): 
+    to import an HTML file.
  * [mdannotation-addclass](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-addclass#readme): 
     to add classes to the next paragraph.
  * [mdannotation-alert](https://github.com/tzi/mdannotation/tree/master/packages/mdannotation-alert#readme): 
