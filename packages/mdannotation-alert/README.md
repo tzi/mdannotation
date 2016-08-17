@@ -28,3 +28,28 @@ Lorem Ipsum
 	Lorem Ipsum
 </div>
 ```
+
+
+Tips
+------
+
+To have some nice alerts, you could add the following rules:
+
+```css
+.md-alert {
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.md-alert--warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+.md-alert--info {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+```
