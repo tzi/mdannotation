@@ -1,6 +1,6 @@
 {
   "name": "mdannotation-alert",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Markdown annotation to create alert components",
   "main": "mdannotation-alert.js",
   "directories": {

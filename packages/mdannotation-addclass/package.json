@@ -1,6 +1,6 @@
 {
   "name": "mdannotation-addclass",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Markdown annotation to add classes to the next paragraph",
   "main": "mdannotation-addclass.js",
   "directories": {
