@@ -28,7 +28,7 @@ npm i posthtml --save
 ```
 
 ```js
-const markdown = require( "markdown" ).markdown;
+const markdown = require('markdown').markdown;
 const posthtml = require('posthtml');
 const annotationPlugin = require('mdannotation-plugin');
 

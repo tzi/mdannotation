@@ -1,7 +1,6 @@
 const url = require('url');
 const querystring = require('querystring');
-const mdannotation = require('../../src/mdannotation');
-const createElement = require('../../src/createElement');
+const {plugin, createElement} = require('mdannotation');
 
 const createVideo = (src) => {
     return createElement('div', {class: 'md-video'}, [
@@ -15,7 +14,7 @@ const createVideo = (src) => {
     ]);
 }
 
-module.exports = mdannotation('embed', function (node, [param]) {
+module.exports = plugin('embed', function (node, [param]) {
     const embedUrl = url.parse(param);
     if (embedUrl.hostname == 'www.youtube.com') {
         const id = querystring.parse(embedUrl.query).v;

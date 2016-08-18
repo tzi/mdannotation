@@ -1,6 +1,6 @@
-const mdannotation = require('../../src/mdannotation');
+const plugin = require('mdannotation').plugin;
 
-module.exports = mdannotation('addClass', function (node, classNames) {
+module.exports = plugin('addClass', function (node, classNames) {
     node.attrs = node.attrs || {};
     node.attrs.class = classNames.join(' ');
     
