@@ -1,6 +1,6 @@
 {
   "name": "mdannotation-embed",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Markdown annotation to embed videos, code playgrounds, etc.",
   "main": "mdannotation-embed.js",
   "directories": {
@@ -26,6 +26,6 @@
     "mocha": "^3.0.2"
   },
   "dependencies": {
-    "mdannotation": "^0.2.0"
+    "mdannotation": "^0.2.1"
   }
 }

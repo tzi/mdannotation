@@ -1,6 +1,6 @@
 {
   "name": "mdannotation",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A collection of posthtml plugins to enable annotations in your Markdown",
   "main": "mdannotation.js",
   "directories": {
