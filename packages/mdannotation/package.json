@@ -1,0 +1,22 @@
+{
+  "name": "mdannotation",
+  "version": "0.1.3",
+  "description": "A collection of posthtml plugins to enable annotations in your Markdown",
+  "main": "mdannotation.js",
+  "directories": {
+    "src": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tzi/mdannotation.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Thomas ZILLIOX (http://tzi.fr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tzi/mdannotation/issues"
+  },
+  "homepage": "https://github.com/tzi/mdannotation/#readme"
+}
