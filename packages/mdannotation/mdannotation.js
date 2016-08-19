@@ -1,9 +1,9 @@
-const converter = require('./src/converter.js');
+const createConverter = require('./src/createConverter.js');
 const createElement = require('./src/createElement.js');
-const plugin = require('./src/plugin.js');
+const createPlugin = require('./src/createPlugin.js');
 
 module.exports = {
-    converter,
+    createConverter,
     createElement,
-    plugin
+    createPlugin
 };

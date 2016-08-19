@@ -1,6 +1,6 @@
 const assert = require('assert');
 const annotationImport = require('../mdannotation-import');
-const converter = require('mdannotation').converter(annotationImport);
+const converter = require('mdannotation').createConverter(annotationImport);
 
 describe('MdAnnotation import', function() {
     it('should import a separate html file', function() {

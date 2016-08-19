@@ -1,6 +1,6 @@
 const assert = require('assert');
 const annotationAlert = require('../mdannotation-alert');
-const converter = require('mdannotation').converter(annotationAlert);
+const converter = require('mdannotation').createConverter(annotationAlert);
 
 describe('MdAnnotation alert', function() {
     it('should create alert components', function() {

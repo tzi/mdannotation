@@ -1,4 +1,4 @@
-module.exports = function(annotation, cb) {
+module.exports = function createPlugin(annotation, cb) {
     return function(tree) {
         return tree.match({tag: 'p'}, function(node) {
             if (Array.isArray(node.content) && node.content.length) {

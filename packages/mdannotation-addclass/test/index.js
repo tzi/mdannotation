@@ -1,6 +1,6 @@
 const assert = require('assert');
 const annotationAddClass = require('../mdannotation-addclass');
-const converter = require('mdannotation').converter(annotationAddClass);
+const converter = require('mdannotation').createConverter(annotationAddClass);
 
 describe('MdAnnotation addClass', function() {
     it('should add the "subtitle" class names', function() {

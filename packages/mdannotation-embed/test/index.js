@@ -1,6 +1,6 @@
 const assert = require('assert');
 const annotationEmbed = require('../mdannotation-embed');
-const converter = require('mdannotation').converter(annotationEmbed);
+const converter = require('mdannotation').createConverter(annotationEmbed);
 
 describe('MdAnnotation embed', function() {
     it('should convert youtube video', function() {

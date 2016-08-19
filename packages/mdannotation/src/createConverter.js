@@ -1,7 +1,7 @@
 const markdown = require('markdown').markdown;
 const posthtml = require('posthtml');
 
-module.exports = function converter(plugins) {
+module.exports = function createConverter(plugins) {
     const pluginList = Array.isArray(plugins) ? plugins : [plugins];
     
     return function(md) {
