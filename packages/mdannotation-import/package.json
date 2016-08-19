@@ -1,6 +1,6 @@
 {
   "name": "mdannotation-import",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Markdown annotation to import an HTML file",
   "main": "mdannotation-import.js",
   "directories": {
@@ -26,7 +26,7 @@
     "mocha": "^3.0.2"
   },
   "dependencies": {
-    "mdannotation": "^0.2.1",
+    "mdannotation": "^0.3.0",
     "posthtml-parser": "^0.2.0"
   }
 }
